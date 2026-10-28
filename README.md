@@ -1,21 +1,36 @@
-# 👋 @aRealGem
+# Hi, I'm Jackie
 
-**30-odd years building production software - now pointed at open-source cancer genomics.**
+**Software engineer and systems architect focused on reliable research tools.**
 
-- 🛠️ **The day job, for three decades:** full-stack Java/Spring for banks - developer up through team lead, dev manager, systems architect. Mostly the connective tissue of large financial systems: service and integration layers (SOAP and REST) over core systems of record, and the real-time and back-office processing behind them. The kind of work where an outage means somebody's paycheck doesn't clear, so you learn to build like it counts. Retired 2025 - turns out that frees up a lot of time.
+My background spans three decades of financial-services technology, from software development and team leadership to systems architecture. I spent roughly 15 years working in Java. Since 2017, Python has been the focus of my private project work.
 
-- 💞️ **What I'm setting out to do:** point three decades of production engineering at open cancer-genomics tooling. I'm at the starting line here, not mid-stream - no merged PRs to my name yet, which is rather the point of starting. [cBioPortal](https://github.com/cBioPortal/cbioportal) (Java/Spring + React - home ground, minus the 15 years of rust I'm scraping off the tooling) and [nf-core](https://github.com/nf-core) (Nextflow) are the two that fit me best so far, and the ones I'd most want to start on - though I'm open to wherever a senior pair of hands is short. Researchers and clinicians run this software to make real calls about real tumors, and plenty of it is held together by people who'd frankly rather be doing the science. Fine. The help I want to give is at the unglamorous end - validators, backend, CI, the plumbing that decides whether you can trust the numbers. The scoreboard I care about is merged PRs. Not planting a flag on anyone's repo, just looking to lighten the load.
+I'm now bringing that experience to research software, data pipelines and applied ML, with a particular interest in cancer and biomedical research. The work that appeals to me is practical: make the inputs trustworthy, the processing reproducible and the results easier to inspect.
 
-- 🔬 **Why me, dear reader:** I've been in a fight with colorectal Cancer for over half a decade now and, so far, holding my own (which means I've read more of my own genomic reports than I ever intended to). Cancer is, at bottom, a coding error - delivery's the hard part, not the concept (CRISPR a suppressor back on here, an oncogene off there, and in principle, presto). I'd like the tools that hunt those errors down built like they matter. Because they do.
+## Open to part-time research engineering
 
-- 🧰 **Toolkit:** Java/Spring, Python, TypeScript/React, Nextflow, TensorFlow/Keras, and a Raspberry Pi 5 (ARM64) fleet I keep around for pipeline-portability testing and ETL.
+I'm open to conversations about remote, part-time software and data-engineering roles with research teams. I'm especially interested in work where dependable tooling can save researchers time: integrations, pipeline reliability, validators, testing and model-evaluation workflows.
 
-- 🧪 **Applied ML:** [histopath-cancer-detection](https://github.com/aRealGem/histopath-cancer-detection) - a leakage-aware PatchCamelyon pipeline with a private scored AUROC north of 0.95. MobileNetV3 transfer on a WSI-grouped split (no slide's patches leak across train/val - the thing that quietly inflates val scores if you skip it). Reported baseline: 0.907 public / 0.876 private AUROC on Kaggle's late-submission board - a Playground comp, so no medal, but val and public landed within 0.001, so the number's honest, not luck. Built a spread of diversifiers around it too - from-scratch CNNs, a domain-adversarial (DANN) stain-adaptation head, and a P4M group-equivariant DenseNet (rotation symmetry, straight from the PCam literature). Config-driven TF/Keras, reproducible on a free Kaggle GPU. Also: [AnimalDetector](https://github.com/aRealGem/AnimalDetector) (CNN/RNN).
+## Selected projects
 
-- 👀 **Reading up on:** multi-omics, microbiology, the gene-therapy frontier, and whether we get the benevolent Singularity or the other kind (rooting hard for the former).
+- **[PREDVAL](https://github.com/aRealGem/predval)** — A predictions-only validation harness for examining model coverage, calibration and cluster-aware uncertainty. Further work on patient-partition checks, convergence handling and reproducible comparisons is available in a [draft pull request](https://github.com/aRealGem/predval/pull/6).
 
-- 📫 **Reach me:** open an issue on any repo here, or tag @aRealGem in a PR or thread. A proper email alias is on the way (never the personal inbox - I like my threat model boring).
+- **[Histopathologic Cancer Detection](https://github.com/aRealGem/histopath-cancer-detection)** — A config-driven TensorFlow/Keras project for PatchCamelyon, with whole-slide-image grouping to reduce train/validation leakage. Includes training, evaluation and prediction workflows.
 
-- 😄 **Pronouns:** she/her
+- **[DataHoover](https://github.com/aRealGem/DataHoover)** — Data ingestion and automation with an emphasis on provenance and repeatable runs. [Recent reliability work](https://github.com/aRealGem/DataHoover/pull/27) adds shared warehouse locking and idempotent ingestion.
 
-- ⚡ **Fun fact:** black belt in Taekwondo. Also deep in SpaceFlight Simulator and working up the nerve to graduate to Kerbal Space Program (rockets being physics with immediate, fiery feedback).
+PREDVAL and Histopath are research projects, not clinically validated products. The repositories document methods, checks and limitations.
+
+## How I work
+
+My foundation is systems architecture and integration. A central part of my architecture work is deciding which component should own each responsibility, with clear service boundaries and manageable dependencies. That includes understanding where data comes from, what an interface promises and how failures propagate. I value clear requirements, reproducible tests, explicit limitations and review before changes are accepted.
+
+I use AI tools as part of my development workflow. I'm interested in teams that combine that capability with clear data-handling rules, testing and accountable review.
+
+**Current focus:** Python, data pipelines, automation and ML-evaluation tooling.  
+**Earlier professional experience:** Java/Spring, service integration and large financial systems, with extensive web-services experience (primarily SOAP, with some REST).
+
+## Around here
+
+For technical discussion, open an issue in the relevant repository or tag **@aRealGem** in a thread.
+
+Outside code, I'm a Taekwondo black belt and a spaceflight-simulator enthusiast.
